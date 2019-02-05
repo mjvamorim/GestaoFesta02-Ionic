@@ -1,0 +1,28 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>ConvidadosEdit</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label stacked>Nome</ion-label>
+      <ion-input type="text" name="nome" [(ngModel)]="convidado.nome"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Quantidade Acompanhantes</ion-label>
+      <ion-input type="text" name="qtde" [(ngModel)]="convidado.qtde"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <button ion-button block (click)="save()">Salvar</button>
+  
+</ion-content>
